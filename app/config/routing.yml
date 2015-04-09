@@ -1,0 +1,8 @@
+layawan_project1:
+    resource: "@LayawanProject1Bundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
