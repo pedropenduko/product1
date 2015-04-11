@@ -49,6 +49,7 @@ class IssueController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
+            $entity->upload();
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
